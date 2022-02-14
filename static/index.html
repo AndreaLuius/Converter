@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Converter Nemea</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3 class="title"><i class="fa-brands fa-drupal"></i><span>File</span> Converter</h3>
+            <form method="post" action="/trasformatore" enctype="multipart/form-data">
+                <div class="content">
+                    <div class="radio-fin">
+                        <h4><i class="fa-solid fa-map-location"></i> Coordinate <span>Types</span></h4>
+                        <label for="6785"><i class="fa-solid fa-globe"></i> 6875</label>
+                        <input id="6785" type="radio" name="coordType">
+                        <label for="4326"><i class="fa-solid fa-globe"></i> 4326</label>
+                        <input id="4326" type="radio" name="coordType">
+                    </div>
+                    <label id="fileBtn" for="files"><i class="fa-solid fa-upload"></i></label>
+                    <input id="files" type="file" name="file" accept=".xml, .zip, .shp, .shx, .dbf">
+                    <input id="uploadBtn" type="submit" value="Convert">    
+                </div>
+            </form>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

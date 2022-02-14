@@ -1,0 +1,166 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/loginBackground.jpg")  no-repeat center center/cover;
+}
+
+.container
+{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.title
+{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.title > span
+{
+    font-size: larger;
+}
+
+.title i
+{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.box
+{
+    background: linear-gradient(45deg,rgba(50,50,50,0.95),rgba(76,76,76,.95));
+    width: 255px;
+    height: 290px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0;
+    z-index: 300;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 300;
+    color: whitesmoke;
+}
+
+.content > input[type="file"]
+{
+   display: none;    
+}
+
+.radio-fin 
+{
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.radio-fin label
+{
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.radio-fin h4
+{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.radio-fin h4 i
+{
+    font-size: larger;
+}
+
+#fileBtn
+{
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 3px;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0px 0 3px 0 rgba(0, 0, 0, .5);
+    margin-top: 15px;
+}
+
+#fileBtn::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    bottom: 0;
+    right:50%;
+    z-index: -1;
+    background-color: cadetblue;
+    transition: all .3s linear;
+}
+
+#fileBtn:hover::before
+{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#fileBtn .fa-upload
+{
+    padding: 10px;
+    transition: color .3s linear;
+}
+
+#fileBtn .fa-upload:hover
+{
+    color: whitesmoke;
+}
+
+#uploadBtn
+{
+    margin-top: 50px;
+    width: 150px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    opacity: .9;
+    background-color: transparent;
+    border: solid 2px cadetblue;
+    color: whitesmoke;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+#uploadBtn:hover
+{
+    transform: scale(1.03);
+    background-color: cadetblue;
+}
+
+
+i
+{
+    color: cadetblue;
+}
+
+span
+{
+    color: cadetblue;
+    font-size: larger;
+}

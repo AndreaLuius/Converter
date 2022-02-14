@@ -1,0 +1,42 @@
+{
+  "name": "xml_test",
+  "version": "1.0.0",
+  "description": "To start   node --max-old-space-size=1800 app.js   nodemon --max-old-space-size=1800 app.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test_pell_prod_1.8G": "NODE_ENV=production max-old-space-size=1800 node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "camaro": "^6.1.0",
+    "csv-parser": "^3.0.0",
+    "dbf-reader": "^1.0.3",
+    "decompress": "^4.2.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "fast-xml-parser": "^3.18.0",
+    "file-regex": "^3.1.0",
+    "folder-zip-sync": "^1.0.5",
+    "fs-extra": "^10.0.0",
+    "he": "^1.2.0",
+    "ini": "^2.0.0",
+    "path": "^0.12.7",
+    "sax": "^1.2.4",
+    "saxjs": "^1.0.0",
+    "schematron-runner": "^1.0.0",
+    "shapefile": "^0.6.6",
+    "shapefile-parser": "^1.0.3",
+    "shp-write": "^0.3.2",
+    "shpjs": "^4.0.2",
+    "txml": "^4.0.1",
+    "xml-js": "^1.6.11",
+    "xml-writer": "^1.7.0",
+    "xml2js": "^0.4.23",
+    "xsd-schema-validator": "^0.7.0",
+    "zip-lib": "^0.7.2",
+    "zip-local": "^0.3.5"
+  }
+}
